@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+group = 'com.github.dmac100.jshellscriptengine'
+version = '1.0.0'
+
+sourceCompatibility = 1.9
+targetCompatibility = 1.9
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+    jcenter()
+}
+
+// In this section you declare the dependencies for your production and test code
+dependencies {
+    testCompile 'junit:junit:4.12'
+}
+
